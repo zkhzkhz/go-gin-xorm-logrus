@@ -1,0 +1,10 @@
+time="2019-03-15T17:28:03+08:00" level=info msg=test
+time="2019-03-15T17:28:03+08:00" level=info msg=msg
+time="2019-03-15T17:28:03+08:00" level=info msg=dddd
+time="2019-03-15T17:29:37+08:00" level=info msg="Shutdown Server ..."
+time="2019-03-15T17:29:37+08:00" level=info msg="Server exiting"
+time="2019-03-15T17:29:44+08:00" level=info msg=test
+time="2019-03-15T17:29:44+08:00" level=info msg=msg
+time="2019-03-15T17:29:44+08:00" level=info msg=dddd
+time="2019-03-15T17:30:01+08:00" level=info msg="Shutdown Server ..."
+time="2019-03-15T17:30:01+08:00" level=info msg="Server exiting"

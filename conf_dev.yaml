@@ -1,0 +1,14 @@
+channel:
+  #亿美-催还款账号信息
+  emayReminder:
+    userId: abcd
+    userPws: abcd
+    url: http://bjmtn.b2m.cn:80/inter/getBalance
+    threshold: 10000
+  #国都短信账号信息
+  guodu:
+    userId: dddd
+    userPws: sssss
+    keyStr: dddddd
+    url: http://221.179.180.158:8081/QxtSms_surplus/surplus
+    threshold: 10000
