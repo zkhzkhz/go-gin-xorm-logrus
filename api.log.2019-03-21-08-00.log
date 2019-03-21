@@ -1,0 +1,201 @@
+{"level":"info","msg":"| 200 |       992.4µs |             ::1 | GET  /getb |","time":"2019-03-21T09:14:51+08:00"}
+{"level":"info","msg":"| 200 |   57.0235099s |             ::1 | GET  /getb |","time":"2019-03-21T09:17:22+08:00"}
+{"level":"info","msg":"| 200 |   26.0045238s |             ::1 | GET  /getb |","time":"2019-03-21T09:17:22+08:00"}
+{"level":"info","msg":"| 200 |    5.0948686s |             ::1 | GET  /getb |","time":"2019-03-21T09:19:56+08:00"}
+time="2019-03-21T09:22:07+08:00" level=info msg="[0xc0001c4600 0xc0001c4700 0xc0001c4800 0xc0001c4900 0xc0001c4a00 0xc0001c4b00 0xc0001c4c00 0xc0001c4d00 0xc0001c4e00 0xc0001c4f00 0xc0001c5000 0xc0001c5100 0xc0001c5200 0xc0001c5300] <nil>" file-line="main.go:93"
+time="2019-03-21T09:22:07+08:00" level=info msg="map[]" file-line="main.go:98"
+[xorm] [info]  2019/03/21 09:22:07.441296 [SQL] SELECT `id`, `title`, `release_date`, `create_date`, `status`, `content`, `attr1`, `attr2`, `attr3` FROM `ks_help` AS `o` WHERE (o.title=?) ORDER BY `create_date` DESC []interface {}{"de毛东0"}
+time="2019-03-21T09:22:07+08:00" level=info msg="[{7731f0cc-e7b2-4efc-959f-9b1dac4ca60d de毛东0 2019-02-26 09:04:03 +0800 CST 2019-02-26 09:04:03 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {88e87f12-91e1-423b-9a73-b835b6e89aa0 de毛东0 2019-02-26 09:04:02 +0800 CST 2019-02-26 09:04:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {c14a2d30-6ec6-4996-95ba-35a62b28f6ab de毛东0 2019-02-26 09:04:02 +0800 CST 2019-02-26 09:04:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {882c6885-e7e3-4008-80c2-17215ff8c8d0 de毛东0 2019-02-26 09:04:01 +0800 CST 2019-02-26 09:04:01 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {891e6137-be34-4131-a175-da098f6216bb de毛东0 2019-02-26 09:04:01 +0800 CST 2019-02-26 09:04:01 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {51c37fc6-7a39-45ba-9d69-d0c47a96bb94 de毛东0 2019-02-26 09:04:00 +0800 CST 2019-02-26 09:04:00 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {f94f3ba7-53b6-4f80-8be4-76985228eaf0 de毛东0 2019-02-26 09:04:00 +0800 CST 2019-02-26 09:04:00 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {9b13bf2b-8118-4cac-ac04-49b83d2a1d9d de毛东0 2019-02-26 09:03:59 +0800 CST 2019-02-26 09:03:59 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {7bcf0655-d97a-41bf-9dcf-0266ab46e813 de毛东0 2019-02-26 09:03:58 +0800 CST 2019-02-26 09:03:58 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {e5d8abb4-e040-4546-bc72-3a6432628bd8 de毛东0 2019-02-26 09:03:57 +0800 CST 2019-02-26 09:03:57 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {f7f5b5af-2012-41f4-8c23-5a46b472b16c de毛东0 2019-02-26 09:03:56 +0800 CST 2019-02-26 09:03:56 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {0bc4ad4b-d9c0-475e-a630-624b83009da1 de毛东0 2019-02-26 09:03:48 +0800 CST 2019-02-26 09:03:48 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {4098998e-f563-4277-a24a-0552517785ab de毛东0 2019-02-26 09:03:47 +0800 CST 2019-02-26 09:03:47 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {9bcba4aa-a140-45f3-8fb6-2cdbac64bf3d de毛东0 2019-02-26 09:01:40 +0800 CST 2019-02-26 09:01:40 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {22df6a9e-85f2-4226-add5-8790af211094 de毛东0 2019-02-26 09:01:18 +0800 CST 2019-02-26 05:42:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   }]" file-line="main.go:106"
+[xorm] [info]  2019/03/21 09:22:07.443290 [SQL] select * from ks_feedback
+time="2019-03-21T09:22:07+08:00" level=info msg="[]" file-line="main.go:110"
+[xorm] [info]  2019/03/21 09:22:07.443290 [SQL] SELECT `id`, `theme_title`, `active_time`, `create_time`, `status`, `app_icon_selected`, `sowing_icon_unselected`, `sowing_icon_selected`, `tv_icon_unselected`, `tv_icon_selected`, `treasure_icon_unselected`, `treasure_icon_selected`, `mine_icon_unselected`, `mine_icon_selected`, `attr1`, `attr2`, `attr3`, `attr4` FROM `ks_icon_theme` WHERE `status` IN (?,?) []interface {}{-1, 0}
+time="2019-03-21T09:22:07+08:00" level=info msg="[{ fsdssssf 0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }]" file-line="main.go:114"
+[xorm] [info]  2019/03/21 09:22:07.443290 [SQL] SELECT `status`, `create_time` FROM `ks_icon_theme` LIMIT 1
+time="2019-03-21T09:22:07+08:00" level=info msg="{  0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }" file-line="main.go:118"
+[xorm] [info]  2019/03/21 09:22:07.444288 [SQL] UPDATE `ks_icon_theme` SET `theme_title` = ? WHERE (id=?) []interface {}{"fsdssssf", "5b93a472-6c1f-4405-bed7-2efe2e9849bf"}
+[xorm] [info]  2019/03/21 09:22:07.444288 [SQL] INSERT INTO `ks_icon_theme` (`id`,`theme_title`,`active_time`,`create_time`,`status`,`app_icon_selected`,`sowing_icon_unselected`,`sowing_icon_selected`,`tv_icon_unselected`,`tv_icon_selected`,`treasure_icon_unselected`,`treasure_icon_selected`,`mine_icon_unselected`,`mine_icon_selected`,`attr1`,`attr2`,`attr3`,`attr4`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) []interface {}{"", "fsdssssf", interface {}(nil), interface {}(nil), 0, "", "", "", "", "", "", "", "", "", "", "", "", ""}
+time="2019-03-21T09:22:07+08:00" level=info msg="Error 1062: Duplicate entry '' for key 'PRIMARY'" file-line="main.go:125"
+[xorm] [info]  2019/03/21 09:22:07.445285 [SQL] SELECT `id`, `theme_title`, `active_time`, `create_time`, `status`, `app_icon_selected`, `sowing_icon_unselected`, `sowing_icon_selected`, `tv_icon_unselected`, `tv_icon_selected`, `treasure_icon_unselected`, `treasure_icon_selected`, `mine_icon_unselected`, `mine_icon_selected`, `attr1`, `attr2`, `attr3`, `attr4` FROM `ks_icon_theme` LIMIT 2
+time="2019-03-21T09:22:07+08:00" level=info msg="[{ fsdssssf 0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }]" file-line="main.go:131"
+[xorm] [info]  2019/03/21 09:22:07.445285 [SQL] SELECT * FROM `users` INNER JOIN `group` ON group.id=users.group_id
+time="2019-03-21T09:22:07+08:00" level=info msg="[{{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{dwd dw 12 2019-03-20 00:00:00 +0800 CST qw we} {qw dwd}} {{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}}]" file-line="main.go:156"
+[xorm] [info]  2019/03/21 09:22:07.446282 [SQL] select users.*, g.name group_name from users, `group` g where users.group_id = g.id
+time="2019-03-21T09:22:07+08:00" level=info msg="[{{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{dwd dw 12 2019-03-20 00:00:00 +0800 CST qw we} { }} {{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }}]" file-line="main.go:159"
+[xorm] [info]  2019/03/21 09:22:07.446282 [SQL] SELECT `id`, `name`, `age`, `birthday`, `group_id`, `type_id` FROM `users` WHERE (age > ? or name =?) []interface {}{20, "xlw"}
+time="2019-03-21T09:22:07+08:00" level=info msg="&{ def 23 2019-03-20 00:00:00 +0800 CST  }" file-line="main.go:166"
+[xorm] [info]  2019/03/21 09:22:07.447288 [SQL] SELECT count(*) FROM `users`
+time="2019-03-21T09:22:07+08:00" level=info msg="table users :count" count=13 file-line="main.go:174"
+[xorm] [info]  2019/03/21 09:22:07.447288 [SQL] SELECT `id`, `name`, `age`, `birthday`, `group_id`, `type_id` FROM `users` WHERE (age>?) []interface {}{13}
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{ def 23 2019-03-20 00:00:00 +0800 CST  }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{1225eea3-7570-49b3-978c-c88064b9f992 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{31f300c4-5865-4e20-a5fa-8f26126efd7b jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{4e4364c5-4f25-45b9-b344-70ab28cd92ba jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{51819268-5ba8-4cab-a33c-fe9458e48c8f jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{6373577c-287c-43ca-ac71-b3202325fb1d jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{ecf87cf1-7b8a-4d73-a900-483f61816806 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw we}"
+time="2019-03-21T09:22:07+08:00" level=info file-line="main.go:186" user="&{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw we}"
+[xorm] [info]  2019/03/21 09:22:07.448277 [SQL] BEGIN TRANSACTION
+[xorm] [info]  2019/03/21 09:22:07.448277 [SQL] INSERT INTO `users` (`id`,`name`,`age`,`birthday`,`group_id`,`type_id`) VALUES (?, ?, ?, ?, ?, ?) []interface {}{"", "def", 23, "2019-03-21", "", ""}
+[xorm] [info]  2019/03/21 09:22:07.448277 [SQL] ROLL BACK
+time="2019-03-21T09:22:40+08:00" level=info msg="[0xc0000f1e00 0xc0000f1f00 0xc00021e000 0xc00021e100 0xc00021e200 0xc00021e300 0xc00021e400 0xc00021e500 0xc00021e600 0xc00021e700 0xc00021e800 0xc00021e900 0xc00021ea00 0xc00021eb00] <nil>" file-line="main.go:93"
+time="2019-03-21T09:22:40+08:00" level=info msg="map[]" file-line="main.go:98"
+[xorm] [info]  2019/03/21 09:22:40.531857 [SQL] SELECT `id`, `title`, `release_date`, `create_date`, `status`, `content`, `attr1`, `attr2`, `attr3` FROM `ks_help` AS `o` WHERE (o.title=?) ORDER BY `create_date` DESC []interface {}{"de毛东0"}
+time="2019-03-21T09:22:40+08:00" level=info msg="[{7731f0cc-e7b2-4efc-959f-9b1dac4ca60d de毛东0 2019-02-26 09:04:03 +0800 CST 2019-02-26 09:04:03 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {88e87f12-91e1-423b-9a73-b835b6e89aa0 de毛东0 2019-02-26 09:04:02 +0800 CST 2019-02-26 09:04:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {c14a2d30-6ec6-4996-95ba-35a62b28f6ab de毛东0 2019-02-26 09:04:02 +0800 CST 2019-02-26 09:04:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {882c6885-e7e3-4008-80c2-17215ff8c8d0 de毛东0 2019-02-26 09:04:01 +0800 CST 2019-02-26 09:04:01 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {891e6137-be34-4131-a175-da098f6216bb de毛东0 2019-02-26 09:04:01 +0800 CST 2019-02-26 09:04:01 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {51c37fc6-7a39-45ba-9d69-d0c47a96bb94 de毛东0 2019-02-26 09:04:00 +0800 CST 2019-02-26 09:04:00 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {f94f3ba7-53b6-4f80-8be4-76985228eaf0 de毛东0 2019-02-26 09:04:00 +0800 CST 2019-02-26 09:04:00 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {9b13bf2b-8118-4cac-ac04-49b83d2a1d9d de毛东0 2019-02-26 09:03:59 +0800 CST 2019-02-26 09:03:59 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {7bcf0655-d97a-41bf-9dcf-0266ab46e813 de毛东0 2019-02-26 09:03:58 +0800 CST 2019-02-26 09:03:58 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {e5d8abb4-e040-4546-bc72-3a6432628bd8 de毛东0 2019-02-26 09:03:57 +0800 CST 2019-02-26 09:03:57 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {f7f5b5af-2012-41f4-8c23-5a46b472b16c de毛东0 2019-02-26 09:03:56 +0800 CST 2019-02-26 09:03:56 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {0bc4ad4b-d9c0-475e-a630-624b83009da1 de毛东0 2019-02-26 09:03:48 +0800 CST 2019-02-26 09:03:48 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {4098998e-f563-4277-a24a-0552517785ab de毛东0 2019-02-26 09:03:47 +0800 CST 2019-02-26 09:03:47 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {9bcba4aa-a140-45f3-8fb6-2cdbac64bf3d de毛东0 2019-02-26 09:01:40 +0800 CST 2019-02-26 09:01:40 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {22df6a9e-85f2-4226-add5-8790af211094 de毛东0 2019-02-26 09:01:18 +0800 CST 2019-02-26 05:42:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   }]" file-line="main.go:106"
+[xorm] [info]  2019/03/21 09:22:40.533854 [SQL] select * from ks_feedback
+time="2019-03-21T09:22:40+08:00" level=info msg="[]" file-line="main.go:110"
+[xorm] [info]  2019/03/21 09:22:40.533854 [SQL] SELECT `id`, `theme_title`, `active_time`, `create_time`, `status`, `app_icon_selected`, `sowing_icon_unselected`, `sowing_icon_selected`, `tv_icon_unselected`, `tv_icon_selected`, `treasure_icon_unselected`, `treasure_icon_selected`, `mine_icon_unselected`, `mine_icon_selected`, `attr1`, `attr2`, `attr3`, `attr4` FROM `ks_icon_theme` WHERE `status` IN (?,?) []interface {}{-1, 0}
+time="2019-03-21T09:22:40+08:00" level=info msg="[{ fsdssssf 0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }]" file-line="main.go:114"
+[xorm] [info]  2019/03/21 09:22:40.534851 [SQL] SELECT `status`, `create_time` FROM `ks_icon_theme` LIMIT 1
+time="2019-03-21T09:22:44+08:00" level=info msg="{  0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }" file-line="main.go:118"
+[xorm] [info]  2019/03/21 09:22:44.334244 [SQL] UPDATE `ks_icon_theme` SET `theme_title` = ? WHERE (id=?) []interface {}{"fsdssssf", "5b93a472-6c1f-4405-bed7-2efe2e9849bf"}
+[xorm] [info]  2019/03/21 09:22:44.335262 [SQL] INSERT INTO `ks_icon_theme` (`id`,`theme_title`,`active_time`,`create_time`,`status`,`app_icon_selected`,`sowing_icon_unselected`,`sowing_icon_selected`,`tv_icon_unselected`,`tv_icon_selected`,`treasure_icon_unselected`,`treasure_icon_selected`,`mine_icon_unselected`,`mine_icon_selected`,`attr1`,`attr2`,`attr3`,`attr4`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) []interface {}{"", "fsdssssf", interface {}(nil), interface {}(nil), 0, "", "", "", "", "", "", "", "", "", "", "", "", ""}
+time="2019-03-21T09:22:44+08:00" level=info msg="Error 1062: Duplicate entry '' for key 'PRIMARY'" file-line="main.go:125"
+[xorm] [info]  2019/03/21 09:22:44.336271 [SQL] SELECT `id`, `theme_title`, `active_time`, `create_time`, `status`, `app_icon_selected`, `sowing_icon_unselected`, `sowing_icon_selected`, `tv_icon_unselected`, `tv_icon_selected`, `treasure_icon_unselected`, `treasure_icon_selected`, `mine_icon_unselected`, `mine_icon_selected`, `attr1`, `attr2`, `attr3`, `attr4` FROM `ks_icon_theme` LIMIT 2
+time="2019-03-21T09:22:44+08:00" level=info msg="[{ fsdssssf 0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }]" file-line="main.go:131"
+[xorm] [info]  2019/03/21 09:22:44.337258 [SQL] SELECT * FROM `users` INNER JOIN `group` ON group.id=users.group_id
+time="2019-03-21T09:22:44+08:00" level=info msg="[{{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{dwd dw 12 2019-03-20 00:00:00 +0800 CST qw we} {qw dwd}} {{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}}]" file-line="main.go:156"
+[xorm] [info]  2019/03/21 09:22:44.338258 [SQL] select users.*, g.name group_name from users, `group` g where users.group_id = g.id
+time="2019-03-21T09:22:44+08:00" level=info msg="[{{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{dwd dw 12 2019-03-20 00:00:00 +0800 CST qw we} { }} {{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }}]" file-line="main.go:159"
+[xorm] [info]  2019/03/21 09:22:45.104462 [SQL] SELECT `id`, `name`, `age`, `birthday`, `group_id`, `type_id` FROM `users` WHERE (age > ? or name =?) []interface {}{20, "xlw"}
+time="2019-03-21T09:22:46+08:00" level=info msg="&{ def 23 2019-03-20 00:00:00 +0800 CST  }" file-line="main.go:166"
+[xorm] [info]  2019/03/21 09:22:46.316115 [SQL] SELECT count(*) FROM `users`
+time="2019-03-21T09:22:46+08:00" level=info msg="table users :count" count=13 file-line="main.go:174"
+[xorm] [info]  2019/03/21 09:22:46.316115 [SQL] SELECT `id`, `name`, `age`, `birthday`, `group_id`, `type_id` FROM `users` WHERE (age>?) []interface {}{13}
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{ def 23 2019-03-20 00:00:00 +0800 CST  }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{1225eea3-7570-49b3-978c-c88064b9f992 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{31f300c4-5865-4e20-a5fa-8f26126efd7b jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{4e4364c5-4f25-45b9-b344-70ab28cd92ba jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{51819268-5ba8-4cab-a33c-fe9458e48c8f jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{6373577c-287c-43ca-ac71-b3202325fb1d jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{ecf87cf1-7b8a-4d73-a900-483f61816806 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw we}"
+time="2019-03-21T09:22:46+08:00" level=info file-line="main.go:186" user="&{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw we}"
+[xorm] [info]  2019/03/21 09:22:46.318110 [SQL] BEGIN TRANSACTION
+[xorm] [info]  2019/03/21 09:22:46.318110 [SQL] INSERT INTO `users` (`id`,`name`,`age`,`birthday`,`group_id`,`type_id`) VALUES (?, ?, ?, ?, ?, ?) []interface {}{"", "def", 23, "2019-03-21", "", ""}
+[xorm] [info]  2019/03/21 09:22:46.318110 [SQL] ROLL BACK
+time="2019-03-21T09:22:56+08:00" level=info msg="[0xc0001a1100 0xc0001a1200 0xc0001a1300 0xc0001a1400 0xc0001a1500 0xc0001a1600 0xc0001a1700 0xc0001a1800 0xc0001a1900 0xc0001a1a00 0xc0001a1b00 0xc0001a1c00 0xc0001a1d00 0xc0001a1e00] <nil>" file-line="main.go:93"
+time="2019-03-21T09:22:56+08:00" level=info msg="map[]" file-line="main.go:98"
+[xorm] [info]  2019/03/21 09:22:56.786206 [SQL] SELECT `id`, `title`, `release_date`, `create_date`, `status`, `content`, `attr1`, `attr2`, `attr3` FROM `ks_help` AS `o` WHERE (o.title=?) ORDER BY `create_date` DESC []interface {}{"de毛东0"}
+time="2019-03-21T09:22:56+08:00" level=info msg="[{7731f0cc-e7b2-4efc-959f-9b1dac4ca60d de毛东0 2019-02-26 09:04:03 +0800 CST 2019-02-26 09:04:03 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {88e87f12-91e1-423b-9a73-b835b6e89aa0 de毛东0 2019-02-26 09:04:02 +0800 CST 2019-02-26 09:04:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {c14a2d30-6ec6-4996-95ba-35a62b28f6ab de毛东0 2019-02-26 09:04:02 +0800 CST 2019-02-26 09:04:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {882c6885-e7e3-4008-80c2-17215ff8c8d0 de毛东0 2019-02-26 09:04:01 +0800 CST 2019-02-26 09:04:01 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {891e6137-be34-4131-a175-da098f6216bb de毛东0 2019-02-26 09:04:01 +0800 CST 2019-02-26 09:04:01 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {51c37fc6-7a39-45ba-9d69-d0c47a96bb94 de毛东0 2019-02-26 09:04:00 +0800 CST 2019-02-26 09:04:00 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {f94f3ba7-53b6-4f80-8be4-76985228eaf0 de毛东0 2019-02-26 09:04:00 +0800 CST 2019-02-26 09:04:00 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {9b13bf2b-8118-4cac-ac04-49b83d2a1d9d de毛东0 2019-02-26 09:03:59 +0800 CST 2019-02-26 09:03:59 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {7bcf0655-d97a-41bf-9dcf-0266ab46e813 de毛东0 2019-02-26 09:03:58 +0800 CST 2019-02-26 09:03:58 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {e5d8abb4-e040-4546-bc72-3a6432628bd8 de毛东0 2019-02-26 09:03:57 +0800 CST 2019-02-26 09:03:57 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {f7f5b5af-2012-41f4-8c23-5a46b472b16c de毛东0 2019-02-26 09:03:56 +0800 CST 2019-02-26 09:03:56 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {0bc4ad4b-d9c0-475e-a630-624b83009da1 de毛东0 2019-02-26 09:03:48 +0800 CST 2019-02-26 09:03:48 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {4098998e-f563-4277-a24a-0552517785ab de毛东0 2019-02-26 09:03:47 +0800 CST 2019-02-26 09:03:47 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {9bcba4aa-a140-45f3-8fb6-2cdbac64bf3d de毛东0 2019-02-26 09:01:40 +0800 CST 2019-02-26 09:01:40 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {22df6a9e-85f2-4226-add5-8790af211094 de毛东0 2019-02-26 09:01:18 +0800 CST 2019-02-26 05:42:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   }]" file-line="main.go:106"
+[xorm] [info]  2019/03/21 09:22:56.787203 [SQL] select * from ks_feedback
+time="2019-03-21T09:22:56+08:00" level=info msg="[]" file-line="main.go:110"
+[xorm] [info]  2019/03/21 09:22:56.787203 [SQL] SELECT `id`, `theme_title`, `active_time`, `create_time`, `status`, `app_icon_selected`, `sowing_icon_unselected`, `sowing_icon_selected`, `tv_icon_unselected`, `tv_icon_selected`, `treasure_icon_unselected`, `treasure_icon_selected`, `mine_icon_unselected`, `mine_icon_selected`, `attr1`, `attr2`, `attr3`, `attr4` FROM `ks_icon_theme` WHERE `status` IN (?,?) []interface {}{-1, 0}
+time="2019-03-21T09:22:56+08:00" level=info msg="[{ fsdssssf 0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }]" file-line="main.go:114"
+[xorm] [info]  2019/03/21 09:22:56.787203 [SQL] SELECT `status`, `create_time` FROM `ks_icon_theme` LIMIT 1
+time="2019-03-21T09:22:56+08:00" level=info msg="{  0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }" file-line="main.go:118"
+[xorm] [info]  2019/03/21 09:22:56.787203 [SQL] UPDATE `ks_icon_theme` SET `theme_title` = ? WHERE (id=?) []interface {}{"fsdssssf", "5b93a472-6c1f-4405-bed7-2efe2e9849bf"}
+[xorm] [info]  2019/03/21 09:22:56.788201 [SQL] INSERT INTO `ks_icon_theme` (`id`,`theme_title`,`active_time`,`create_time`,`status`,`app_icon_selected`,`sowing_icon_unselected`,`sowing_icon_selected`,`tv_icon_unselected`,`tv_icon_selected`,`treasure_icon_unselected`,`treasure_icon_selected`,`mine_icon_unselected`,`mine_icon_selected`,`attr1`,`attr2`,`attr3`,`attr4`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) []interface {}{"", "fsdssssf", interface {}(nil), interface {}(nil), 0, "", "", "", "", "", "", "", "", "", "", "", "", ""}
+time="2019-03-21T09:22:56+08:00" level=info msg="Error 1062: Duplicate entry '' for key 'PRIMARY'" file-line="main.go:125"
+[xorm] [info]  2019/03/21 09:22:56.788201 [SQL] SELECT `id`, `theme_title`, `active_time`, `create_time`, `status`, `app_icon_selected`, `sowing_icon_unselected`, `sowing_icon_selected`, `tv_icon_unselected`, `tv_icon_selected`, `treasure_icon_unselected`, `treasure_icon_selected`, `mine_icon_unselected`, `mine_icon_selected`, `attr1`, `attr2`, `attr3`, `attr4` FROM `ks_icon_theme` LIMIT 2
+time="2019-03-21T09:22:56+08:00" level=info msg="[{ fsdssssf 0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }]" file-line="main.go:131"
+[xorm] [info]  2019/03/21 09:22:56.788201 [SQL] SELECT * FROM `users` INNER JOIN `group` ON group.id=users.group_id
+time="2019-03-21T09:22:56+08:00" level=info msg="[{{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{dwd dw 12 2019-03-20 00:00:00 +0800 CST qw we} {qw dwd}} {{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}}]" file-line="main.go:156"
+[xorm] [info]  2019/03/21 09:22:56.788201 [SQL] select users.*, g.name group_name from users, `group` g where users.group_id = g.id
+time="2019-03-21T09:22:56+08:00" level=info msg="[{{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{dwd dw 12 2019-03-20 00:00:00 +0800 CST qw we} { }} {{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }}]" file-line="main.go:159"
+[xorm] [info]  2019/03/21 09:22:56.789198 [SQL] SELECT `id`, `name`, `age`, `birthday`, `group_id`, `type_id` FROM `users` WHERE (age > ? or name =?) []interface {}{20, "xlw"}
+time="2019-03-21T09:22:56+08:00" level=info msg="&{ def 23 2019-03-20 00:00:00 +0800 CST  }" file-line="main.go:166"
+[xorm] [info]  2019/03/21 09:22:56.789198 [SQL] SELECT count(*) FROM `users`
+time="2019-03-21T09:22:56+08:00" level=info msg="table users :count" count=13 file-line="main.go:174"
+[xorm] [info]  2019/03/21 09:22:56.789198 [SQL] SELECT `id`, `name`, `age`, `birthday`, `group_id`, `type_id` FROM `users` WHERE (age>?) []interface {}{13}
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{ def 23 2019-03-20 00:00:00 +0800 CST  }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{1225eea3-7570-49b3-978c-c88064b9f992 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{31f300c4-5865-4e20-a5fa-8f26126efd7b jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{4e4364c5-4f25-45b9-b344-70ab28cd92ba jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{51819268-5ba8-4cab-a33c-fe9458e48c8f jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{6373577c-287c-43ca-ac71-b3202325fb1d jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{ecf87cf1-7b8a-4d73-a900-483f61816806 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw we}"
+time="2019-03-21T09:22:56+08:00" level=info file-line="main.go:186" user="&{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw we}"
+[xorm] [info]  2019/03/21 09:22:56.790195 [SQL] BEGIN TRANSACTION
+[xorm] [info]  2019/03/21 09:22:56.790195 [SQL] INSERT INTO `users` (`id`,`name`,`age`,`birthday`,`group_id`,`type_id`) VALUES (?, ?, ?, ?, ?, ?) []interface {}{"", "def", 23, "2019-03-21", "", ""}
+[xorm] [info]  2019/03/21 09:22:56.790195 [SQL] ROLL BACK
+time="2019-03-21T09:23:24+08:00" level=info msg="map[]" file-line="client.go:10"
+time="2019-03-21T09:23:35+08:00" level=info msg="map[]" file-line="client.go:10"
+time="2019-03-21T09:23:45+08:00" level=info msg="map[]" file-line="client.go:10"
+time="2019-03-21T09:29:03+08:00" level=info msg="map[]" file-line="client.go:10"
+time="2019-03-21T09:29:20+08:00" level=info msg="map[]" file-line="client.go:10"
+time="2019-03-21T09:29:46+08:00" level=info msg="map[]" file-line="client.go:10"
+time="2019-03-21T09:31:43+08:00" level=info msg="map[]" file-line="client.go:10"
+time="2019-03-21T09:31:49+08:00" level=info msg="[0xc0000ecc00 0xc0000ecd00 0xc0000ece00 0xc0000ecf00 0xc0000ed000 0xc0000ed100 0xc0000ed200 0xc0000ed300 0xc0000ed400 0xc0000ed500 0xc0000ed600 0xc0000ed700 0xc0000ed800 0xc0000ed900] <nil>" file-line="main.go:93"
+time="2019-03-21T09:31:49+08:00" level=info msg="map[]" file-line="main.go:98"
+[xorm] [info]  2019/03/21 09:31:49.167466 [SQL] SELECT `id`, `title`, `release_date`, `create_date`, `status`, `content`, `attr1`, `attr2`, `attr3` FROM `ks_help` AS `o` WHERE (o.title=?) ORDER BY `create_date` DESC []interface {}{"de毛东0"}
+time="2019-03-21T09:31:49+08:00" level=info msg="[{7731f0cc-e7b2-4efc-959f-9b1dac4ca60d de毛东0 2019-02-26 09:04:03 +0800 CST 2019-02-26 09:04:03 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {88e87f12-91e1-423b-9a73-b835b6e89aa0 de毛东0 2019-02-26 09:04:02 +0800 CST 2019-02-26 09:04:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {c14a2d30-6ec6-4996-95ba-35a62b28f6ab de毛东0 2019-02-26 09:04:02 +0800 CST 2019-02-26 09:04:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {882c6885-e7e3-4008-80c2-17215ff8c8d0 de毛东0 2019-02-26 09:04:01 +0800 CST 2019-02-26 09:04:01 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {891e6137-be34-4131-a175-da098f6216bb de毛东0 2019-02-26 09:04:01 +0800 CST 2019-02-26 09:04:01 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {51c37fc6-7a39-45ba-9d69-d0c47a96bb94 de毛东0 2019-02-26 09:04:00 +0800 CST 2019-02-26 09:04:00 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {f94f3ba7-53b6-4f80-8be4-76985228eaf0 de毛东0 2019-02-26 09:04:00 +0800 CST 2019-02-26 09:04:00 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {9b13bf2b-8118-4cac-ac04-49b83d2a1d9d de毛东0 2019-02-26 09:03:59 +0800 CST 2019-02-26 09:03:59 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {7bcf0655-d97a-41bf-9dcf-0266ab46e813 de毛东0 2019-02-26 09:03:58 +0800 CST 2019-02-26 09:03:58 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {e5d8abb4-e040-4546-bc72-3a6432628bd8 de毛东0 2019-02-26 09:03:57 +0800 CST 2019-02-26 09:03:57 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {f7f5b5af-2012-41f4-8c23-5a46b472b16c de毛东0 2019-02-26 09:03:56 +0800 CST 2019-02-26 09:03:56 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {0bc4ad4b-d9c0-475e-a630-624b83009da1 de毛东0 2019-02-26 09:03:48 +0800 CST 2019-02-26 09:03:48 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {4098998e-f563-4277-a24a-0552517785ab de毛东0 2019-02-26 09:03:47 +0800 CST 2019-02-26 09:03:47 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {9bcba4aa-a140-45f3-8fb6-2cdbac64bf3d de毛东0 2019-02-26 09:01:40 +0800 CST 2019-02-26 09:01:40 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   } {22df6a9e-85f2-4226-add5-8790af211094 de毛东0 2019-02-26 09:01:18 +0800 CST 2019-02-26 05:42:02 +0800 CST 1 dfrgg坤啊很难过sgggrrrger   }]" file-line="main.go:106"
+[xorm] [info]  2019/03/21 09:31:49.168462 [SQL] select * from ks_feedback
+time="2019-03-21T09:31:49+08:00" level=info msg="[]" file-line="main.go:110"
+[xorm] [info]  2019/03/21 09:31:49.168462 [SQL] SELECT `id`, `theme_title`, `active_time`, `create_time`, `status`, `app_icon_selected`, `sowing_icon_unselected`, `sowing_icon_selected`, `tv_icon_unselected`, `tv_icon_selected`, `treasure_icon_unselected`, `treasure_icon_selected`, `mine_icon_unselected`, `mine_icon_selected`, `attr1`, `attr2`, `attr3`, `attr4` FROM `ks_icon_theme` WHERE `status` IN (?,?) []interface {}{-1, 0}
+time="2019-03-21T09:31:49+08:00" level=info msg="[{ fsdssssf 0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }]" file-line="main.go:114"
+[xorm] [info]  2019/03/21 09:31:49.169459 [SQL] SELECT `status`, `create_time` FROM `ks_icon_theme` LIMIT 1
+time="2019-03-21T09:31:49+08:00" level=info msg="{  0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }" file-line="main.go:118"
+[xorm] [info]  2019/03/21 09:31:49.169459 [SQL] UPDATE `ks_icon_theme` SET `theme_title` = ? WHERE (id=?) []interface {}{"fsdssssf", "5b93a472-6c1f-4405-bed7-2efe2e9849bf"}
+[xorm] [info]  2019/03/21 09:31:49.169459 [SQL] INSERT INTO `ks_icon_theme` (`id`,`theme_title`,`active_time`,`create_time`,`status`,`app_icon_selected`,`sowing_icon_unselected`,`sowing_icon_selected`,`tv_icon_unselected`,`tv_icon_selected`,`treasure_icon_unselected`,`treasure_icon_selected`,`mine_icon_unselected`,`mine_icon_selected`,`attr1`,`attr2`,`attr3`,`attr4`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) []interface {}{"", "fsdssssf", interface {}(nil), interface {}(nil), 0, "", "", "", "", "", "", "", "", "", "", "", "", ""}
+time="2019-03-21T09:31:49+08:00" level=info msg="Error 1062: Duplicate entry '' for key 'PRIMARY'" file-line="main.go:125"
+[xorm] [info]  2019/03/21 09:31:49.170457 [SQL] SELECT `id`, `theme_title`, `active_time`, `create_time`, `status`, `app_icon_selected`, `sowing_icon_unselected`, `sowing_icon_selected`, `tv_icon_unselected`, `tv_icon_selected`, `treasure_icon_unselected`, `treasure_icon_selected`, `mine_icon_unselected`, `mine_icon_selected`, `attr1`, `attr2`, `attr3`, `attr4` FROM `ks_icon_theme` LIMIT 2
+time="2019-03-21T09:31:49+08:00" level=info msg="[{ fsdssssf 0001-01-01 00:00:00 +0000 UTC 2019-03-20 09:28:47 +0800 CST 0             }]" file-line="main.go:131"
+[xorm] [info]  2019/03/21 09:31:49.170457 [SQL] SELECT * FROM `users` INNER JOIN `group` ON group.id=users.group_id
+time="2019-03-21T09:31:49+08:00" level=info msg="[{{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}} {{dwd dw 12 2019-03-20 00:00:00 +0800 CST qw we} {qw dwd}} {{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } {qw dwd}}]" file-line="main.go:156"
+[xorm] [info]  2019/03/21 09:31:49.170457 [SQL] select users.*, g.name group_name from users, `group` g where users.group_id = g.id
+time="2019-03-21T09:31:49+08:00" level=info msg="[{{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }} {{dwd dw 12 2019-03-20 00:00:00 +0800 CST qw we} { }} {{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw } { }}]" file-line="main.go:159"
+[xorm] [info]  2019/03/21 09:31:49.171454 [SQL] SELECT `id`, `name`, `age`, `birthday`, `group_id`, `type_id` FROM `users` WHERE (age > ? or name =?) []interface {}{20, "xlw"}
+time="2019-03-21T09:31:49+08:00" level=info msg="&{ def 23 2019-03-20 00:00:00 +0800 CST  }" file-line="main.go:166"
+[xorm] [info]  2019/03/21 09:31:49.171454 [SQL] SELECT count(*) FROM `users`
+time="2019-03-21T09:31:49+08:00" level=info msg="table users :count" count=13 file-line="main.go:174"
+[xorm] [info]  2019/03/21 09:31:49.171454 [SQL] SELECT `id`, `name`, `age`, `birthday`, `group_id`, `type_id` FROM `users` WHERE (age>?) []interface {}{13}
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{ def 23 2019-03-20 00:00:00 +0800 CST  }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{0 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{1225eea3-7570-49b3-978c-c88064b9f992 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{31f300c4-5865-4e20-a5fa-8f26126efd7b jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{3889a8bb-a01a-4c2c-b2e5-b89929e32585 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{4e4364c5-4f25-45b9-b344-70ab28cd92ba jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{51819268-5ba8-4cab-a33c-fe9458e48c8f jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{6373577c-287c-43ca-ac71-b3202325fb1d jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{695c3ab9-2ac2-44a6-91b1-510786c39b78 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw }"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{ecf87cf1-7b8a-4d73-a900-483f61816806 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw we}"
+time="2019-03-21T09:31:49+08:00" level=info file-line="main.go:186" user="&{fd9749a0-51f3-4ed1-80b0-e9b03376a0b6 jinzhu 18 2019-03-18 00:00:00 +0800 CST qw we}"
+[xorm] [info]  2019/03/21 09:31:49.172451 [SQL] BEGIN TRANSACTION
+[xorm] [info]  2019/03/21 09:31:49.172451 [SQL] INSERT INTO `users` (`id`,`name`,`age`,`birthday`,`group_id`,`type_id`) VALUES (?, ?, ?, ?, ?, ?) []interface {}{"", "def", 23, "2019-03-21", "", ""}
+[xorm] [info]  2019/03/21 09:31:49.172451 [SQL] ROLL BACK
+time="2019-03-21T09:31:52+08:00" level=info msg=test
+time="2019-03-21T09:31:52+08:00" level=info msg=msg
+time="2019-03-21T09:31:52+08:00" level=info msg=dddd
+time="2019-03-21T09:38:08+08:00" level=info msg="Shutdown Server ..."
+time="2019-03-21T09:38:08+08:00" level=info msg="Server exiting"
+time="2019-03-21T09:38:10+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:134"
+time="2019-03-21T09:38:10+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:135"
+time="2019-03-21T09:38:10+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:136"
+time="2019-03-21T09:39:01+08:00" level=info msg="{{aaa} }" file-line="gracefullyStartorEnd.go:45"
+{"level":"info","msg":"| 200 |            0s |             ::1 | GET  /getb |","time":"2019-03-21T09:39:01+08:00"}
+time="2019-03-21T09:39:01+08:00" level=info msg="| 200 |            0s |             ::1 | GET  /getb |"
+time="2019-03-21T09:44:36+08:00" level=info msg="Shutdown Server ..."
+time="2019-03-21T09:44:36+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:165"
+time="2019-03-21T09:44:46+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:134"
+time="2019-03-21T09:44:46+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:135"
+time="2019-03-21T09:44:46+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:136"
+time="2019-03-21T09:44:52+08:00" level=info msg="{{aaa} }" file-line="gracefullyStartorEnd.go:45"
+{"level":"info","msg":"| 200 |   29.0729787s |             ::1 | GET  /getb |","time":"2019-03-21T09:45:21+08:00"}
+time="2019-03-21T09:45:21+08:00" level=info msg="| 200 |   29.0729787s |             ::1 | GET  /getb |"
+time="2019-03-21T09:45:33+08:00" level=info msg="{{aaa} }" file-line="gracefullyStartorEnd.go:45"
+{"level":"info","msg":"| 200 |    3.7864639s |             ::1 | GET  /getb |","time":"2019-03-21T09:45:36+08:00"}
+time="2019-03-21T09:45:36+08:00" level=info msg="| 200 |    3.7864639s |             ::1 | GET  /getb |"
+time="2019-03-21T10:03:56+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:134"
+time="2019-03-21T10:03:56+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:135"
+time="2019-03-21T10:03:56+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:136"
+time="2019-03-21T10:03:56+08:00" level=error msg="listen: %s\nlisten tcp :8050: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2019-03-21T10:04:06+08:00" level=info msg="Shutdown Server ..."
+time="2019-03-21T10:04:06+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:165"
+time="2019-03-21T10:04:18+08:00" level=info msg="Shutdown Server ..." file-line="gracefullyStartorEnd.go:159"
+time="2019-03-21T10:04:18+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:165"
+time="2019-03-21T10:04:20+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:134"
+time="2019-03-21T10:04:20+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:135"
+time="2019-03-21T10:04:20+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:136"
+time="2019-03-21T10:05:03+08:00" level=info msg="{{aaa} }" file-line="gracefullyStartorEnd.go:45"
+{"level":"info","msg":"| 200 |            0s |             ::1 | GET  /getb |","time":"2019-03-21T10:05:03+08:00"}
+time="2019-03-21T10:05:03+08:00" level=info msg="| 200 |            0s |             ::1 | GET  /getb |"
+time="2019-03-21T10:05:14+08:00" level=info msg="Shutdown Server ..." file-line="gracefullyStartorEnd.go:159"
+time="2019-03-21T10:05:14+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:165"

@@ -1,0 +1,4 @@
+time="2019-03-15T13:38:02+08:00" level=info msg=test
+time="2019-03-15T13:38:02+08:00" level=info msg=dddd
+time="2019-03-15T13:39:18+08:00" level=info msg="Shutdown Server ..."
+time="2019-03-15T13:39:18+08:00" level=info msg="Server exiting"
