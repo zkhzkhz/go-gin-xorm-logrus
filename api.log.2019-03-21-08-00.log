@@ -199,3 +199,5 @@ time="2019-03-21T10:05:03+08:00" level=info msg="{{aaa} }" file-line="gracefully
 time="2019-03-21T10:05:03+08:00" level=info msg="| 200 |            0s |             ::1 | GET  /getb |"
 time="2019-03-21T10:05:14+08:00" level=info msg="Shutdown Server ..." file-line="gracefullyStartorEnd.go:159"
 time="2019-03-21T10:05:14+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:165"
+{"level":"info","msg":"| 200 |            0s |             ::1 | GET  /getb |","time":"2019-03-21T18:10:52+08:00"}
+{"level":"info","msg":"| 200 |       987.3µs |             ::1 | GET  /getb |","time":"2019-03-21T18:11:49+08:00"}
