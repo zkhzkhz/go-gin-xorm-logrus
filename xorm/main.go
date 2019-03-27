@@ -31,7 +31,7 @@ func main() {
 	//控制台打印调试及以上的信息
 	engine.Logger().SetLevel(core.LOG_INFO)
 	//写入文件
-	f, err := os.OpenFile("api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
+	f, err := os.OpenFile("log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
 	if err != nil {
 		logrus.Info(err.Error())
 		return

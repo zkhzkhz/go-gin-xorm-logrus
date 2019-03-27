@@ -1,10 +1,10 @@
 package config
 
 import (
+	"gin/log"
 	"github.com/gin-gonic/gin"
-	log "github.com/sirupsen/logrus"
-	"go/src/io/ioutil"
 	"gopkg.in/yaml.v2"
+	"io/ioutil"
 )
 
 var configFile []byte

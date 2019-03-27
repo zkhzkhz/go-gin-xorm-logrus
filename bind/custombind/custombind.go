@@ -49,7 +49,7 @@ func startPage1(c *gin.Context) {
 	// 如果是Get，那么接收不到请求中的Post的数据？？
 	// 如果是Post, 首先判断 `content-type` 的类型 `JSON` or `XML`, 然后使用对应的绑定器获取数据.
 	// See more at https://github.com/gin-gonic/gin/blob/master/binding/binding.go#L48
-	//if c.ShouldBind(&person) == nil {
+	//if c.go.ShouldBind(&person) == nil {
 	//	log.Println("====== Only Bind By Query String ======")
 	//	//	log.Println(person.ID)
 	//	log.Println(person.Name)

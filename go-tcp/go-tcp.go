@@ -4,10 +4,15 @@ import (
 	"gin/log"
 	"io/ioutil"
 	"net"
+	"net/http"
+	_ "net/http/pprof"
 	"time"
 )
 
 func main() {
+	go func() {
+		log.Info(http.ListenAndServe(":8081", nil))
+	}()
 	tcpserver, _ := net.ResolveTCPAddr("tcp4", ":8080")
 	server2, _ := net.ListenTCP("tcp", tcpserver)
 	go func() {
@@ -41,7 +46,7 @@ func handle(conn net.Conn) {
 	//读取客户端传送的消息
 	go func() {
 		response, _ := ioutil.ReadAll(conn)
-		log.Info(response)
+		log.Info(string(response))
 	}()
 
 	//send message to client

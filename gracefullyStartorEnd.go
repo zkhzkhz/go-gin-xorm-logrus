@@ -5,7 +5,12 @@ import (
 	"context"
 	"fmt"
 	"gin/config"
+	"gin/controller"
 	. "gin/log"
+	"gin/models"
+	"github.com/gin-contrib/cors"
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	_ "github.com/lestrrat/go-file-rotatelogs"
@@ -21,43 +26,17 @@ import (
 )
 
 //自定义结构体绑定表单数据
-type StructA struct {
-	FieldA string `form:"field_a"`
-}
-type StructB struct {
-	NestedStruct StructA
-	FieldB       string `form:"field_b"`
-}
-type StructC struct {
-	NestedStructPointer *StructA
-	FieldC              string `form:"field_c"`
-}
-type StructD struct {
-	NestedAnonyStruct struct {
-		FieldX string `form:"field_x"`
-	}
-	FieldD string `form:"field_d"`
-}
 
-func GetDataB(c *gin.Context) {
-	var b StructB
-	_ = c.Bind(&b)
-	Info(b)
-	c.JSON(200, gin.H{
-		"a": b.NestedStruct,
-		"b": b.FieldB,
-	})
-}
 func GetDataC(c *gin.Context) {
-	var b StructC
+	var b models.StructC
 	_ = c.Bind(&b)
 	c.JSON(200, gin.H{
-		"a": b.NestedStructPointer,
-		"c": b.FieldC,
+		"a":    b.NestedStructPointer,
+		"c.go": b.FieldC,
 	})
 }
 func GetDataD(c *gin.Context) {
-	var b StructD
+	var b models.StructD
 	_ = c.Bind(&b)
 	c.JSON(200, gin.H{
 		"x": b.NestedAnonyStruct,
@@ -75,10 +54,10 @@ type formB struct {
 func SomeHandler(c *gin.Context) {
 	objA := formA{}
 	objB := formB{}
-	// This c.ShouldBind consumes c.Request.Body and it cannot be reused.
+	// This c.go.ShouldBind consumes c.go.Request.Body and it cannot be reused.
 	if errA := c.ShouldBind(&objA); errA == nil {
 		c.String(http.StatusOK, `the body should be formA`)
-		// Always an error is occurred by this because c.Request.Body is EOF now.
+		// Always an error is occurred by this because c.go.Request.Body is EOF now.
 	} else if errB := c.ShouldBind(&objB); errB == nil {
 		c.String(http.StatusOK, `the body should be formB`)
 	} else {
@@ -88,10 +67,10 @@ func SomeHandler(c *gin.Context) {
 func SomeHandler1(c *gin.Context) {
 	objA := formA{}
 	objB := formB{}
-	//c.ShouldBindBodyWith 在绑定之前将body存储到上下文中，这对性能有轻微影响，因此如果你要立即调用，则不应使用此方法
+	//c.go.ShouldBindBodyWith 在绑定之前将body存储到上下文中，这对性能有轻微影响，因此如果你要立即调用，则不应使用此方法
 	//此功能仅适用于这些格式 — JSON, XML, MsgPack, ProtoBuf。对于其他格式，Query, Form, FormPost, FormMultipart,
 	//可以被c.ShouldBind()多次调用而不影响性能
-	// This reads c.Request.Body and stores the result into the context.
+	// This reads c.go.Request.Body and stores the result into the context.
 	if errA := c.ShouldBindBodyWith(&objA, binding.JSON); errA == nil {
 		c.String(http.StatusOK, `the body should be formA`)
 		// At this time, it reuses body stored in the context.
@@ -108,15 +87,94 @@ func SomeHandler1(c *gin.Context) {
 func main() {
 
 	//gin.DefaultWriter = io.MultiWriter(logFile, os.Stdout)
-
 	router := gin.New()
 	router.Use(Logger(), gin.Recovery())
+	//跨域设置
+	router.Use(cors.Default())
+	//sessions
+	//cookie based
+	store := cookie.NewStore([]byte("secret"))
+	router.Use(sessions.Sessions("mysession", store))
+	router.GET("/incr", func(c *gin.Context) {
+		session := sessions.Default(c)
+		var count int
+		v := session.Get("count")
+		if v == nil {
+			count = 0
+		} else {
+			count = v.(int)
+			count++
+		}
+		session.Set("count", count)
+		_ = session.Save()
+		c.JSON(http.StatusOK, gin.H{"count": count})
+	})
+	//redis
+	//storeRedis, _ := redis.NewStore(10, "tcp", "loaclhost:6379", "", []byte("secret"))
+	//router.Use(sessions.Sessions("mysession",storeRedis))
+	//router.GET("/incrRedis", func(c.go *gin.Context) {
+	//	session:=sessions.Default(c.go)
+	//	var count int
+	//	v:=session.Get("count")
+	//	if v==nil {
+	//		count=0
+	//	}else{
+	//		count=v.(int)
+	//		count++
+	//	}
+	//	session.Set("count",count)
+	//	_ = session.Save()
+	//	c.go.JSON(http.StatusOK,gin.H{"count":count})
+	//})
+	////memcache
+	//client := mc.NewMC("localhost:11211", "username", "password")
+	//storeMemcache := memcached.NewMemcacheStore(client, "", []byte("secret"))
+	//router.Use(sessions.Sessions("mysession", storeMemcache))
+	//
+	//router.GET("/incrMemcache", func(c.go *gin.Context) {
+	//	session := sessions.Default(c.go)
+	//	var count int
+	//	v := session.Get("count")
+	//	if v == nil {
+	//		count = 0
+	//	} else {
+	//		count = v.(int)
+	//		count++
+	//	}
+	//	session.Set("count", count)
+	//	session.Save()
+	//	c.go.JSON(200, gin.H{"count": count})
+	//})
+	////MongoDB
+	//session, err := mgo.Dial("localhost:27017/test")
+	//if err != nil {
+	//	// handle err
+	//}
+	//
+	//c.go := session.DB("").C("sessions")
+	//storeMongo := mongo.NewStore(c.go, 3600, true, []byte("secret"))
+	//router.Use(sessions.Sessions("mysession", storeMongo))
+	//router.GET("/incrMongo", func(c.go *gin.Context) {
+	//	session := sessions.Default(c.go)
+	//	var count int
+	//	v := session.Get("count")
+	//	if v == nil {
+	//		count = 0
+	//	} else {
+	//		count = v.(int)
+	//		count++
+	//	}
+	//	session.Set("count", count)
+	//	session.Save()
+	//	c.go.JSON(200, gin.H{"count": count})
+	//})
+
 	//d, _ := time.ParseDuration("4354434588s")
 	//log.Info(d)
 	var pp *os.File
 	//var err error
 	defer pp.Close()
-	pp, _ = os.OpenFile("api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
+	pp, _ = os.OpenFile("log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
 	//log.SetLogLevel(logrus.InfoLevel)
 	//log.Info(os.Stdout)
 	//log.SetLogFormatter(logrus.Formatter())
@@ -138,6 +196,11 @@ func main() {
 		time.Sleep(5 * time.Second)
 		c.String(http.StatusOK, "Welcome Gin Server")
 	})
+	router.GET("/getb", controller.GetDataB)
+	router.GET("/getc", GetDataC)
+	router.GET("/getd", GetDataD)
+	router.POST("/login", controller.Signin)
+	router.POST("/welcome", controller.Welcome)
 	srv := &http.Server{
 		Addr:    ":8050",
 		Handler: router,
@@ -148,11 +211,8 @@ func main() {
 			logrus.Error("listen: %s\n", err)
 		}
 	}()
-	router.GET("/getb", GetDataB)
-	router.GET("/getc", GetDataC)
-	router.GET("/getd", GetDataD)
-	// Wait for interrupt signal to gracefully shutdown the server with
 	// a timeout of 5 seconds.
+	// Wait for interrupt signal to gracefully shutdown the server with
 	quit := make(chan os.Signal)
 	signal.Notify(quit, os.Interrupt)
 	<-quit

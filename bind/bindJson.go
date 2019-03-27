@@ -16,7 +16,7 @@ func main() {
 	router := gin.Default()
 	router.POST("/login", func(c *gin.Context) {
 		// you can bind multipart form with explicit binding declaration:
-		// c.ShouldBindWith(&form, binding.Form)
+		// c.go.ShouldBindWith(&form, binding.Form)
 		// or you can simply use autobinding with ShouldBind method:
 		var form LoginForm
 		// in this case proper binding will be automatically selected

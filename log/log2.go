@@ -16,7 +16,7 @@ func Logger() gin.HandlerFunc {
 
 	//禁止logrus的输出
 	//src, err := os.OpenFile(os.DevNull, os.O_APPEND|os.O_WRONLY, os.ModeAppend)
-	src, err := os.OpenFile("api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
+	src, err := os.OpenFile("log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
 
 	if err != nil {
 		fmt.Println("err", err)
@@ -25,7 +25,8 @@ func Logger() gin.HandlerFunc {
 	logClient.SetLevel(logrus.InfoLevel)
 	mw := io.MultiWriter(os.Stdout, src)
 	logClient.SetOutput(mw)
-	apiLogPath := "api.log"
+	logClient.Info("fefefe")
+	apiLogPath := "log/api.log"
 	logWriter, err := rotatelogs.New(
 		apiLogPath+".%Y-%m-%d-%H-%M.log",
 		rotatelogs.WithLinkName(apiLogPath),       // 生成软链，指向最新日志文件

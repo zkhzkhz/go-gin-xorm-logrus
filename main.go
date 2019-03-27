@@ -13,7 +13,7 @@ func main() {
 	gin.SetMode(gin.DebugMode)
 	router := gin.Default()
 	router.GET("ping", func(c *gin.Context) {
-		//c.JSON(200, gin.H{
+		//c.go.JSON(200, gin.H{
 		//	"message": "pong",
 		//})
 		c.String(http.StatusOK, "pong")
