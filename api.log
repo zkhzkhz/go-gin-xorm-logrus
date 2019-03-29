@@ -1,7 +1,1 @@
-time="2019-03-25T13:30:06+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:193"
-time="2019-03-25T13:30:06+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:194"
-time="2019-03-25T13:30:06+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:195"
-time="2019-03-25T13:30:34+08:00" level=info msg="Shutdown Server ..." file-line="gracefullyStartorEnd.go:218"
-time="2019-03-25T13:30:34+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:224"
-time="2019-03-26T09:26:42+08:00" level=info msg=fefefe
-time="2019-03-26T09:26:49+08:00" level=info msg="| 200 |       998.4µs |             ::1 | GET  /getb |"
+api.log.2019-03-29-08-00.log

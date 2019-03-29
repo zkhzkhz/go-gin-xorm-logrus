@@ -174,7 +174,7 @@ func main() {
 	var pp *os.File
 	//var err error
 	defer pp.Close()
-	pp, _ = os.OpenFile("log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0755)
+	pp, _ = os.OpenFile("api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0777)
 	//log.SetLogLevel(logrus.InfoLevel)
 	//log.Info(os.Stdout)
 	//log.SetLogFormatter(logrus.Formatter())
