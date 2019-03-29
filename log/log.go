@@ -12,7 +12,7 @@ import (
 var logger = logrus.New()
 
 func init() {
-	src, err := os.OpenFile("log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
+	src, err := os.OpenFile("log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0755)
 	if err != nil {
 		fmt.Println("err", err)
 	}

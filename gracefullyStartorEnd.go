@@ -174,7 +174,7 @@ func main() {
 	var pp *os.File
 	//var err error
 	defer pp.Close()
-	pp, _ = os.OpenFile("log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
+	pp, _ = os.OpenFile("log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0755)
 	//log.SetLogLevel(logrus.InfoLevel)
 	//log.Info(os.Stdout)
 	//log.SetLogFormatter(logrus.Formatter())
@@ -201,6 +201,7 @@ func main() {
 	router.GET("/getd", GetDataD)
 	router.POST("/login", controller.Signin)
 	router.POST("/welcome", controller.Welcome)
+	router.POST("/refresh", controller.Refresh)
 	srv := &http.Server{
 		Addr:    ":8050",
 		Handler: router,
