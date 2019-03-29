@@ -1,9 +1,8 @@
 package controller
 
 import (
-	"gin/log"
-	"gin/models"
-	"gin/util"
+	"../log"
+	"../util"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -192,51 +191,51 @@ func Refresh(c *gin.Context) {
 	})
 }
 
-func GetDataB(c *gin.Context) {
-	//request.ParseFromRequest(req *http.Request,extractor request.Extractor,keyFunc jwt.Keyfunc)
-	var b models.StructB
-	_ = c.Bind(&b)
-	tokenStr := GetTokenStr(c)
-
-	claims := &Claim{}
-	err := ValidToken(tokenStr, claims)
-	if err == nil {
-
-		c.JSON(200, gin.H{
-			"a": b.NestedStruct,
-			"b": b.FieldB,
-		})
-		return
-	}
-	if err == util.ErrEmptyToken {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"status": http.StatusBadRequest,
-			"msg":    "token值为空",
-		})
-		return
-	}
-	if err == util.ErrExpiredToken {
-		c.JSON(http.StatusUnauthorized, gin.H{
-			"status": http.StatusUnauthorized,
-			"msg":    "令牌失效",
-		})
-		return
-	}
-	if err == jwt.ErrSignatureInvalid {
-		c.JSON(http.StatusUnauthorized, gin.H{
-			"status": http.StatusUnauthorized,
-			"msg":    "key invalid",
-		})
-		return
-	} else {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"status": http.StatusBadRequest,
-			"msg":    "验证出错",
-		})
-		return
-	}
-
-}
+//func GetDataB(c *gin.Context) {
+//	//request.ParseFromRequest(req *http.Request,extractor request.Extractor,keyFunc jwt.Keyfunc)
+//	var b models.StructB
+//	_ = c.Bind(&b)
+//	tokenStr := GetTokenStr(c)
+//
+//	claims := &Claim{}
+//	err := ValidToken(tokenStr, claims)
+//	if err == nil {
+//
+//		c.JSON(200, gin.H{
+//			"a": b.NestedStruct,
+//			"b": b.FieldB,
+//		})
+//		return
+//	}
+//	if err == util.ErrEmptyToken {
+//		c.JSON(http.StatusBadRequest, gin.H{
+//			"status": http.StatusBadRequest,
+//			"msg":    "token值为空",
+//		})
+//		return
+//	}
+//	if err == util.ErrExpiredToken {
+//		c.JSON(http.StatusUnauthorized, gin.H{
+//			"status": http.StatusUnauthorized,
+//			"msg":    "令牌失效",
+//		})
+//		return
+//	}
+//	if err == jwt.ErrSignatureInvalid {
+//		c.JSON(http.StatusUnauthorized, gin.H{
+//			"status": http.StatusUnauthorized,
+//			"msg":    "key invalid",
+//		})
+//		return
+//	} else {
+//		c.JSON(http.StatusBadRequest, gin.H{
+//			"status": http.StatusBadRequest,
+//			"msg":    "验证出错",
+//		})
+//		return
+//	}
+//
+//}
 func GetTokenStr(c *gin.Context) string {
 	tokenStr := c.Request.Header.Get("authorization")
 	splitToken := strings.Split(tokenStr, "Bearer ")
@@ -244,18 +243,18 @@ func GetTokenStr(c *gin.Context) string {
 	return tokenStr
 }
 
-func ValidToken(tokenStr string, claims *Claim) error {
-	token, err := jwt.ParseWithClaims(tokenStr, claims, func(token *jwt.Token) (i interface{}, e error) {
-		return jwtKey, nil
-	})
-	if token == nil {
-		return util.ErrEmptyToken
-	}
-	if !token.Valid {
-		return util.ErrExpiredToken
-	}
-	if err != nil {
-		return err
-	}
-	return err
-}
+//func ValidToken(tokenStr string, claims *Claim) error {
+//	token, err := jwt.ParseWithClaims(tokenStr, claims, func(token *jwt.Token) (i interface{}, e error) {
+//		return jwtKey, nil
+//	})
+//	if token == nil {
+//		return util.ErrEmptyToken
+//	}
+//	if !token.Valid {
+//		return util.ErrExpiredToken
+//	}
+//	if err != nil {
+//		return err
+//	}
+//	return err
+//}
