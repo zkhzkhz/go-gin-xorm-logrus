@@ -1,7 +1,7 @@
 package config
 
 import (
-	"gin/log"
+	"../log"
 	"github.com/gin-gonic/gin"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"

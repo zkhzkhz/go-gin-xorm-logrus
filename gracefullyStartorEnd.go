@@ -1,13 +1,12 @@
 package main
 
 import (
+	"./config"
+	"./controller"
+	"./models"
 	_ "bufio"
 	"context"
 	"fmt"
-	"gin/config"
-	"gin/controller"
-	. "gin/log"
-	"gin/models"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"
@@ -17,6 +16,8 @@ import (
 	_ "github.com/pkg/errors"
 	_ "github.com/rifflock/lfshook"
 	"github.com/sirupsen/logrus"
+	"go-gin-xorm-logrus/log"
+	_ "go-gin-xorm-logrus/log"
 	"io"
 	"net/http"
 	"os"
@@ -88,7 +89,7 @@ func main() {
 
 	//gin.DefaultWriter = io.MultiWriter(logFile, os.Stdout)
 	router := gin.New()
-	router.Use(Logger(), gin.Recovery())
+	router.Use(log.Logger(), gin.Recovery())
 	//跨域设置
 	router.Use(cors.Default())
 	//sessions
@@ -174,7 +175,7 @@ func main() {
 	var pp *os.File
 	//var err error
 	defer pp.Close()
-	pp, _ = os.OpenFile("api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0777)
+	pp, _ = os.OpenFile("./log/api.log", os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0777)
 	//log.SetLogLevel(logrus.InfoLevel)
 	//log.Info(os.Stdout)
 	//log.SetLogFormatter(logrus.Formatter())
@@ -189,14 +190,14 @@ func main() {
 	port := projectConfig.Channel.EmayReminderConfig.Url
 	fmt.Println(port)
 	//log.SetOutput(os.Stdout)
-	Info("test")
-	Info("msg")
-	Info("dddd")
+	log.Info("test")
+	log.Info("msg")
+	log.Info("dddd")
 	router.GET("/", func(c *gin.Context) {
 		time.Sleep(5 * time.Second)
 		c.String(http.StatusOK, "Welcome Gin Server")
 	})
-	router.GET("/getb", controller.GetDataB)
+	//router.GET("/getb", controller.GetDataB)
 	router.GET("/getc", GetDataC)
 	router.GET("/getd", GetDataD)
 	router.POST("/login", controller.Signin)
@@ -217,11 +218,11 @@ func main() {
 	quit := make(chan os.Signal)
 	signal.Notify(quit, os.Interrupt)
 	<-quit
-	Info("Shutdown Server ...")
+	log.Info("Shutdown Server ...")
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 	if err := srv.Shutdown(ctx); err != nil {
-		Error("Server Shutdown:", err)
+		log.Error("Server Shutdown:", err)
 	}
-	Info("Server exiting")
+	log.Info("Server exiting")
 }
