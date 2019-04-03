@@ -1,0 +1,32 @@
+{"level":"info","msg":"| 200 |  5.000975325s |       127.0.0.1 | GET  / |","time":"2019-04-01T13:51:15+08:00"}
+{"level":"info","msg":"| 200 |  5.000502358s |       127.0.0.1 | GET  / |","time":"2019-04-01T13:51:52+08:00"}
+time="2019-04-01T13:53:02+08:00" level=info msg=fefefe
+time="2019-04-01T13:53:02+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:192"
+time="2019-04-01T13:53:02+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:193"
+time="2019-04-01T13:53:02+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:194"
+time="2019-04-01T14:05:26+08:00" level=info msg="Shutdown Server ..." file-line="gracefullyStartorEnd.go:220"
+time="2019-04-01T14:05:26+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:226"
+time="2019-04-01T14:05:50+08:00" level=info msg=fefefe
+time="2019-04-01T14:05:50+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:192"
+time="2019-04-01T14:05:50+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:193"
+time="2019-04-01T14:05:50+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:194"
+time="2019-04-02T17:54:18+08:00" level=info msg="[] dial tcp 127.0.0.1:3306: connect: connection refused" file-line="main.go:93"
+time="2019-04-02T17:54:18+08:00" level=info msg="map[]" file-line="main.go:98"
+time="2019-04-02T17:54:18+08:00" level=info msg="[]" file-line="main.go:106"
+time="2019-04-02T17:54:18+08:00" level=info msg="[]" file-line="main.go:110"
+time="2019-04-02T17:54:18+08:00" level=info msg="[]" file-line="main.go:114"
+time="2019-04-02T17:54:18+08:00" level=info msg="{  0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0             }" file-line="main.go:118"
+time="2019-04-02T17:54:18+08:00" level=info msg="dial tcp 127.0.0.1:3306: connect: connection refused" file-line="main.go:125"
+time="2019-04-02T17:54:18+08:00" level=info msg="[]" file-line="main.go:131"
+time="2019-04-02T17:54:18+08:00" level=info msg="[]" file-line="main.go:156"
+time="2019-04-02T17:54:18+08:00" level=info msg="[]" file-line="main.go:159"
+time="2019-04-02T17:54:18+08:00" level=info msg="table users :count" count=0 file-line="main.go:174"
+time="2019-04-02T17:55:45+08:00" level=info msg=fefefe
+time="2019-04-02T17:55:45+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:192"
+time="2019-04-02T17:55:45+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:193"
+time="2019-04-02T17:55:45+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:194"
+time="2019-04-02T17:56:21+08:00" level=info msg="| 200 |  5.000928999s |       127.0.0.1 | GET  / |"
+time="2019-04-02T17:56:51+08:00" level=info msg="| 200 |  5.000492224s |       127.0.0.1 | GET  / |"
+time="2019-04-02T17:57:05+08:00" level=info msg="| 200 |  5.001046984s |       127.0.0.1 | GET  / |"
+time="2019-04-02T17:57:24+08:00" level=info msg="Shutdown Server ..." file-line="gracefullyStartorEnd.go:220"
+time="2019-04-02T17:57:24+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:226"

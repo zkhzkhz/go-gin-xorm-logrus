@@ -1,0 +1,17 @@
+{"level":"info","msg":"| 401 | 13.168773283s |   192.168.135.1 | GET  /getb |","time":"2019-03-29T12:36:18+08:00"}
+time="2019-03-29T12:38:51+08:00" level=info msg=fefefe
+time="2019-03-29T12:38:51+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:192"
+time="2019-03-29T12:38:51+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:193"
+time="2019-03-29T12:38:51+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:194"
+{"level":"info","msg":"| 401 |      557.56µs |   192.168.135.1 | GET  /getb |","time":"2019-03-29T12:39:35+08:00"}
+time="2019-03-29T12:39:35+08:00" level=info msg="| 401 |      557.56µs |   192.168.135.1 | GET  /getb |"
+time="2019-03-29T12:39:57+08:00" level=info msg="Shutdown Server ..." file-line="gracefullyStartorEnd.go:220"
+time="2019-03-29T12:39:57+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:226"
+time="2019-04-01T13:50:48+08:00" level=info msg=fefefe
+time="2019-04-01T13:50:48+08:00" level=info msg=test file-line="gracefullyStartorEnd.go:192"
+time="2019-04-01T13:50:48+08:00" level=info msg=msg file-line="gracefullyStartorEnd.go:193"
+time="2019-04-01T13:50:48+08:00" level=info msg=dddd file-line="gracefullyStartorEnd.go:194"
+time="2019-04-01T13:51:15+08:00" level=info msg="| 200 |  5.000975325s |       127.0.0.1 | GET  / |"
+time="2019-04-01T13:51:52+08:00" level=info msg="| 200 |  5.000502358s |       127.0.0.1 | GET  / |"
+time="2019-04-01T13:52:10+08:00" level=info msg="Shutdown Server ..." file-line="gracefullyStartorEnd.go:220"
+time="2019-04-01T13:52:10+08:00" level=info msg="Server exiting" file-line="gracefullyStartorEnd.go:226"

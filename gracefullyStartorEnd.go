@@ -3,6 +3,7 @@ package main
 import (
 	"./config"
 	"./controller"
+	"./log"
 	"./models"
 	_ "bufio"
 	"context"
@@ -16,8 +17,6 @@ import (
 	_ "github.com/pkg/errors"
 	_ "github.com/rifflock/lfshook"
 	"github.com/sirupsen/logrus"
-	"go-gin-xorm-logrus/log"
-	_ "go-gin-xorm-logrus/log"
 	"io"
 	"net/http"
 	"os"
