@@ -1,9 +1,9 @@
 package main
 
 import (
+	"../log"
+	"../models"
 	"fmt"
-	"gin/log"
-	"gin/models"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/core"
 	"github.com/go-xorm/xorm"
