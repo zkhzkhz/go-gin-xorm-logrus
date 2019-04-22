@@ -197,6 +197,7 @@ func main() {
 		c.String(http.StatusOK, "Welcome Gin Server")
 	})
 	//router.GET("/getb", controller.GetDataB)
+	router.GET("/help/get", controller.GetHelp)
 	router.GET("/getc", GetDataC)
 	router.GET("/getd", GetDataD)
 	router.POST("/login", controller.Signin)
