@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gin/log"
+	"../log"
 	"io/ioutil"
 	"net"
 	"net/http"
