@@ -10,6 +10,7 @@ import (
 
 var host1 = flag.String("host", "", "host")
 var port1 = flag.String("port", "3333", "port")
+
 func main() {
 	flag.Parse()
 	conn, err := net.Dial("tcp", *host1+":"+*port1)

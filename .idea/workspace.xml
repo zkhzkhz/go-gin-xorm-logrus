@@ -1,53 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="77721af7-0584-41e7-866e-4fcc2cfa2f1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api.log" beforeDir="false" afterPath="$PROJECT_DIR$/api.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.log.2019-03-21-08-00.log" beforeDir="false" afterPath="$PROJECT_DIR$/api.log.2019-03-21-08-00.log" afterDir="false" />
+    <list default="true" id="77721af7-0584-41e7-866e-4fcc2cfa2f1e" name="Default Changelist" comment="fix build error">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gin.log" beforeDir="false" afterPath="$PROJECT_DIR$/gin.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gintest/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gintest/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-rpc/http/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-rpc/http/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-tcp/tcpChannel/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-tcp/tcpChannel/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-tcp/tcpChannel/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-tcp/tcpChannel/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-tcp/tcpFile/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-tcp/tcpFile/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-tcp/tcpFile/encodeUtil.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-tcp/tcpFile/encodeUtil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-tcp/tcpFile/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-tcp/tcpFile/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-tcp/waitGroupTCP/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-tcp/waitGroupTCP/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-udp/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-udp/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-udp/udpserver.go" beforeDir="false" afterPath="$PROJECT_DIR$/go-udp/udpserver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gracefullyStartorEnd.go" beforeDir="false" afterPath="$PROJECT_DIR$/gracefullyStartorEnd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multipleService.go" beforeDir="false" afterPath="$PROJECT_DIR$/multipleService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/dd/jwt_t.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/dd/jwt_t.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/errHandle.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/errHandle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vendor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/xorm/main.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-4792" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gracefullyStartorEnd.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2175" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api.log.2019-03-21-08-00.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="308">
-              <caret line="202" selection-start-line="202" selection-end-line="202" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api.log.2019-03-21-08-00.log_symlink">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4753" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="GOROOT" path="C:\Go" />
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.17.3" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$/.." />
+      </list>
+    </option>
+    <option name="useGoPathFromSystemEnvironment" value="false" />
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="324" />
@@ -55,6 +50,7 @@
     <option name="width" value="1342" />
     <option name="height" value="876" />
   </component>
+  <component name="ProjectId" id="21gQJAZaW1cgFOHbZmrx1bQgXBH" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -75,69 +71,77 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="GO_FMT" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553163256480" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build gin">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="gin2" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/" />
       <package value="gin2" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gin" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-gin-xorm-logrus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="gin" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build gracefullyStartorEnd.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gin2" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/gracefullyStartorEnd.go" />
       <package value="gin2" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/gracefullyStartorEnd.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="gin2" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <framework value="gotest" />
       <kind value="DIRECTORY" />
       <package value="gin2" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build gin" />
         <item itemvalue="Go Build.go build gracefullyStartorEnd.go" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -204,12 +208,28 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="d" />
     <MESSAGE value="dfe" />
-    <option name="LAST_COMMIT_MESSAGE" value="dfe" />
+    <MESSAGE value="fix build error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build error" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gracefullyStartorEnd.go">

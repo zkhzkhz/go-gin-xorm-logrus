@@ -10,6 +10,7 @@ import (
 
 var host = flag.String("host", "", "host")
 var port = flag.String("port", "3333", "port")
+
 func main() {
 	flag.Parse()
 	var l net.Listener

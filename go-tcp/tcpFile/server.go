@@ -60,7 +60,7 @@ func main() {
 		// 拿到了文件的名字
 		fileName := string(buf[:n])
 		// 返回ok
-		conn.Write([]byte ("ok"))
+		conn.Write([]byte("ok"))
 		// 接收文件,
 		revFile(fileName, conn)
 

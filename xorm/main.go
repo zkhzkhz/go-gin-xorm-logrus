@@ -1,16 +1,16 @@
 package orm
 
 import (
-	"../log"
-	"../models"
 	"fmt"
+	"gin/log"
+	"gin/models"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/go-xorm/core"
 	"github.com/go-xorm/xorm"
 	"github.com/sirupsen/logrus"
 	"io"
 	"os"
 	"time"
+	"xorm.io/core"
 )
 
 //engine 是goroutine安全的

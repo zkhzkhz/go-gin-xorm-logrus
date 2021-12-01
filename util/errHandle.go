@@ -1,7 +1,7 @@
 package util
 
 import (
-	. "../log"
+	. "gin/log"
 	"os"
 )
 

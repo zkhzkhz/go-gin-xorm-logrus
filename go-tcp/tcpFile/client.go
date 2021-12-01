@@ -5,7 +5,7 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
-	"go-gin-xorm-logrus/log"
+	"gin/log"
 	"net"
 	"os"
 )
@@ -78,7 +78,7 @@ func main() {
 			fmt.Println("net.Dial err = ", err1)
 			return
 		}
-		conn.Write([]byte (info.Name()))
+		conn.Write([]byte(info.Name()))
 		// 接受到是不是ok
 		buf := make([]byte, 1024)
 		n, err2 := conn.Read(buf)

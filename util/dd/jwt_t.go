@@ -22,7 +22,7 @@ func main() {
 	userInfo["loca"] = strconv.FormatInt(t.UnixNano(), 10)
 	userInfo["iat"] = "0"
 
-	tokenString := util.CreateToken(key, userInfo)
+	tokenString := util.CreateToken(key, "local")
 	claims, ok := util.ParseToken(tokenString, key)
 	if ok {
 		oldT, _ := strconv.ParseInt(claims.(jwt.MapClaims)["exp"].(string), 10, 64)

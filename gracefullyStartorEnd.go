@@ -1,13 +1,13 @@
 package main
 
 import (
-	"./config"
-	"./controller"
-	"./log"
-	"./models"
 	_ "bufio"
 	"context"
 	"fmt"
+	"gin/config"
+	"gin/controller"
+	"gin/log"
+	"gin/models"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"

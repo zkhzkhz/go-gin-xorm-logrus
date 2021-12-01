@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../../log"
+	"gin/log"
 	"github.com/pkg/errors"
 	"net"
 	"net/http"

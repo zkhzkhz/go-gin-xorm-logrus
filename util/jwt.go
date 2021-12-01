@@ -1,8 +1,8 @@
 package util
 
 import (
-	"../log"
 	"fmt"
+	"gin/log"
 	"github.com/dgrijalva/jwt-go"
 	"time"
 )

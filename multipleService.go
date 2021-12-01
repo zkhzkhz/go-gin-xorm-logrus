@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/golang/sync/errgroup"
+	"golang.org/x/sync/errgroup"
 	"log"
 	"net/http"
 	"time"
